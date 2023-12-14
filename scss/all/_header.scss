@@ -115,7 +115,6 @@ header {
 @media only screen and (max-width: 834px) {
   header {
     border-bottom: 1.5px solid #e5e7ea;
-    background: #fff;
     .nav {
       padding: 27px 5px;
 
@@ -127,6 +126,77 @@ header {
       }
       &--items-btn {
         display: none;
+      }
+      .menu-icon {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    border-bottom: 1.5px solid #e5e7ea;
+
+    .nav {
+      display: flex;
+      height: 80px;
+      align-items: center;
+      justify-content: space-between;
+
+      &__logo {
+        gap: 10px;
+        cursor: pointer;
+        align-items: center;
+      }
+
+      &__list {
+        display: none;
+        list-style-type: none;
+        align-items: center;
+
+        &--item {
+          display: none;
+          align-items: center;
+
+          &-link {
+            display: none;
+            gap: 8px;
+            padding: 18px;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-decoration: none;
+            align-items: center;
+          }
+        }
+        &--items-btn1 {
+          background: #272727;
+          width: 58px;
+          height: 58px;
+          display: none;
+          place-content: center;
+          border-radius: 50%;
+          border: none;
+        }
+        &--items-btn {
+          display: none;
+          gap: 8px;
+          background: #299764;
+          color: #fff;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border-radius: 100px;
+          padding: 18px 30px;
+          border: none;
+          align-items: center;
+          margin-left: 16px;
+        }
       }
       .menu-icon {
         display: block;
